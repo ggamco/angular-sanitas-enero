@@ -1,0 +1,15 @@
+<table *ngIf="isTrue; else default">
+    <tr *ngFor="let year of years">
+        <td>{{ year }}</td>
+        
+        <td *ngIf="year%2 == 0; else impar"> PAR </td>
+        <ng-template #impar>
+            <td> IMPAR </td>
+        </ng-template>
+        
+    </tr>
+</table>
+
+<ng-template #default>
+    <p>nada que mostrar</p>
+</ng-template>
