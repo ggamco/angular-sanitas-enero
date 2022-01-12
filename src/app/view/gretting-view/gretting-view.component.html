@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="input-group input-group-sm mb-3">
+        <!--<input #myname type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon1" (click)="showGretting(myname.value)">Button</button>-->
+        <input [(ngModel)]="nombre" type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon1" (click)="showGretting()">Button</button>
+    </div>
+</div>
+<div *ngIf="isVisible" class="container">
+    <div class="alert alert-primary" role="alert">
+        hola - {{nombre}} -
+    </div>
+</div>
