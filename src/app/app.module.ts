@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { MyButtonComponent } from './components/my-button/my-button.component';
 import { MyListComponent } from './components/my-list/my-list.component';
 import { GrettingViewComponent } from './view/gretting-view/gretting-view.component';
+import { SaludoViewComponent } from './view/saludo-view/saludo-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyButtonComponent,
     MyListComponent,
-    GrettingViewComponent
+    GrettingViewComponent,
+    SaludoViewComponent
   ],
   imports: [
     BrowserModule,
