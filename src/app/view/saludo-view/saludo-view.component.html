@@ -1,1 +1,5 @@
-<p>saludo-view works!</p>
+<input [(ngModel)]="mensaje" type="text">
+<button (click)="mostrarMensaje()">Saludar</button>
+<p *ngIf="esVisible">{{mensaje}}</p>
+<!--<app-my-button [mensaje]="mensajeBotonSaludo"></app-my-button>-->
+

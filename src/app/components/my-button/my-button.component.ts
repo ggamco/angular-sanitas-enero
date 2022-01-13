@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-my-button',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyButtonComponent implements OnInit {
 
-  mensaje = "mi mensaje dinamico"
+  @Input() mensaje: string | undefined;
 
   constructor() { }
 

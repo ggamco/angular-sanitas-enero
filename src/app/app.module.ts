@@ -8,6 +8,7 @@ import { MyButtonComponent } from './components/my-button/my-button.component';
 import { MyListComponent } from './components/my-list/my-list.component';
 import { GrettingViewComponent } from './view/gretting-view/gretting-view.component';
 import { SaludoViewComponent } from './view/saludo-view/saludo-view.component';
+import { UserFormComponent } from './view/user-form/user-form.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +16,13 @@ import { SaludoViewComponent } from './view/saludo-view/saludo-view.component';
     MyButtonComponent,
     MyListComponent,
     GrettingViewComponent,
-    SaludoViewComponent
+    SaludoViewComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule // esto es para poder vincular los formularios con objetos en TypeScript
   ],
   providers: [],
   bootstrap: [AppComponent]
