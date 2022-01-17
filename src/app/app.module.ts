@@ -9,6 +9,7 @@ import { MyListComponent } from './components/my-list/my-list.component';
 import { GrettingViewComponent } from './view/gretting-view/gretting-view.component';
 import { SaludoViewComponent } from './view/saludo-view/saludo-view.component';
 import { UserFormComponent } from './view/user-form/user-form.component';
+import { LoginViewComponent } from './view/login-view/login-view.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { UserFormComponent } from './view/user-form/user-form.component';
     MyListComponent,
     GrettingViewComponent,
     SaludoViewComponent,
-    UserFormComponent
+    UserFormComponent,
+    LoginViewComponent
   ],
   imports: [
     BrowserModule,
