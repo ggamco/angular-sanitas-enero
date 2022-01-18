@@ -8,7 +8,7 @@ import { Login } from './data/login';
 })
 export class LoginViewComponent implements OnInit {
 
-  userInfo = new Login();
+  userInfo = new Login()
 
   constructor() { }
 
